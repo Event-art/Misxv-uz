@@ -175,13 +175,13 @@ body{
 
 .family-title{
   display:block;
-  font-size:20px;
-  font-weight:500;        /* más ancha */
-  letter-spacing:3px;    /* más aire */
+  font-size:19px;
+  font-weight:500;
+  letter-spacing:3.5px;
+  font-family:'Cormorant Garamond', serif;
   color:var(--pink);
   margin-bottom:10px;
 }
-
 
 
 .family-names{
