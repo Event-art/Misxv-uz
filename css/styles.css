@@ -177,7 +177,7 @@ body{
 .family-title{
   display:block;
   font-size:20px;
-  font-weight:800px;        /* 👈 más ancha */
+  font-weight:750px;        /* 👈 más ancha */
   letter-spacing:3px;    /* 👈 más aire */
   color:var(--pink);
   margin-bottom:10px;
@@ -338,7 +338,7 @@ body{
 .timeline-time{
   display:block;
   font-size:17px;
-  font-weight:800px;
+  font-weight:700px;
   letter-spacing:3px;
   font-family:'Cormorant Garamond', serif;
   color:var(--pink);
