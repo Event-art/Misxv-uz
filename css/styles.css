@@ -173,12 +173,12 @@ body{
   margin:0 auto 35px;
 }
 
+
 .family-title{
   display:block;
-  font-size:19px;
-  font-weight:500;
-  letter-spacing:3.5px;
-  font-family:'Cormorant Garamond', serif;
+  font-size:20px;
+  font-weight:510;        /* 👈 más ancha */
+  letter-spacing:3px;    /* 👈 más aire */
   color:var(--pink);
   margin-bottom:10px;
 }
