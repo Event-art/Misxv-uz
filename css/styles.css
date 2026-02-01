@@ -176,10 +176,13 @@ body{
 .family-title{
   display:block;
   font-size:20px;
-  letter-spacing:2px;
+  font-weight:500;        /* más ancha */
+  letter-spacing:3px;    /* más aire */
   color:var(--pink);
   margin-bottom:10px;
 }
+
+
 
 .family-names{
   font-family:'Great Vibes', cursive;
@@ -332,11 +335,12 @@ body{
   box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
-/* Hora */
 .timeline-time{
   display:block;
-  font-size:16px;
-  letter-spacing:2px;
+  font-size:17px;
+  font-weight:500;
+  letter-spacing:3px;
+  font-family:'Cormorant Garamond', serif;
   color:var(--pink);
   margin-bottom:6px;
 }
@@ -554,58 +558,47 @@ footer{
   from{ opacity:0; }
   to{ opacity:1; }
 }
-
-/* ================== MODO SOLO CELULAR ================== */
-
-/* Fondo general en pantallas grandes */
+/* ================== MODO CELULAR FORZADO ================== */
 body{
-  background:linear-gradient(135deg, #FDF7FA, #EFFFFF);
+  display:flex;
+  justify-content:center;
 }
 
-/* Contenedor tipo celular */
-.mobile-wrapper{
-  max-width: 430px;
-  margin: 0 auto;
-  background: var(--soft);
-  box-shadow: 0 0 40px rgba(0,0,0,.15);
+/* Contenedor principal */
+.main-wrapper{
+  width:100%;
+  max-width:420px;   /* 👈 ancho típico celular */
+  background:var(--soft);
+  box-shadow:0 0 40px rgba(0,0,0,.12);
+}
+.hero-single{
+  height:100vh;
+  max-height:820px;
 }
 
-/* ================== AJUSTES DESKTOP / TABLET ================== */
+.hero-single img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.gallery-swiper{
+  max-width:320px;
+}
+
+.dresscode-image img{
+  width:100%;
+  max-width:320px;
+}
+.timeline::before{
+  left:50%;
+}
+
+.timeline-content{
+  max-width:280px;
+}
 @media(min-width:768px){
-
   body{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:40px 0;
-  }
-
-  .mobile-wrapper{
-    border-radius:26px;
-  }
-
-  /* Portada no tan alta en compu */
-  .hero-single{
-    height:90vh;
+    background:#eee; /* fondo elegante alrededor */
   }
 }
 
-/* ================== AJUSTES CELULAR ================== */
-@media(max-width:480px){
-
-  .hero-text .name{
-    font-size:54px;
-  }
-
-  .hero-text .title{
-    font-size:17px;
-  }
-
-  .invitation-text{
-    font-size:24px;
-  }
-
-  .countdown-section{
-    padding:70px 15px;
-  }
-}
